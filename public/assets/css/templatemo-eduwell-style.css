@@ -1361,6 +1361,16 @@ section.page-heading .header-text h4 {
   text-transform: capitalize;
   color: #7a7a7a;
 }
+section.page-heading .header-text h4 a{
+  font-size: 17px;
+  text-transform: capitalize;
+  color: #7a7a7a;
+}
+section.page-heading .header-text h4 a:hover{
+  font-size: 17px;
+  text-transform: capitalize;
+  color: #d888b3;
+}
 
 section.page-heading .header-text h1 {
   font-size: 62px;

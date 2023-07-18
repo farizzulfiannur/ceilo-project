@@ -14,17 +14,18 @@ class ContactController extends Controller
         $data = contact::create([
             'full_name' => $request->full_name,
             'email' => $request->email,
+            'phone' => $request->phone,
             'message' => $request->message,
         ]);
         $data->save();
 
         if ($data) {
             Session::flash('berhasilcontact', 'Pesan Telah Terkirim');
-            return redirect()->route('index');
+            return redirect()->route('contactku');
         }
         else{
             Session::flash('gagalcontact','Maaf Pesan Gagal Terkirim');
-            return redirect()->route('index');
+            return redirect()->route('contactku');
         }
     }
 

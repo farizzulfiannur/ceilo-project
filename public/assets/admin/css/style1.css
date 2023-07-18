@@ -2448,7 +2448,8 @@ table.dataTable.dtr-inline.collapsed
   border-radius: 0 0 10px 10px;
 }
 .header_iner.default_header {
-  background: rgb(219, 138, 222);
+  /* background: rgb(219, 138, 222); */
+  background: #7E519F;
   border-radius: 0 0 10px 10px;
 }
 @media (max-width: 575.98px) {
@@ -2664,7 +2665,7 @@ table.dataTable.dtr-inline.collapsed
 }
 .profile_info .profile_info_iner .profile_author_name {
   padding: 20px 25px;
-  background: #c972d8;
+  background: #7E519F;
   border-radius: 10px 15px 0 0;
 }
 .profile_info .profile_info_iner a {

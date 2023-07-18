@@ -7,9 +7,11 @@
     <title>Login Ceilo</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset('vendor/login/bootstrap/css/bootstrap.min.css') }}">
-
+    <!-- Favicons -->
+    <link href="{{ asset('assets/desain2/assets/img3/logo-rv.png') }}" rel="icon">    
     <!-- jQuery library -->
     <script src="{{ asset('vendor/login/bootstrap/js/jquery.min.js') }}"></script>
 

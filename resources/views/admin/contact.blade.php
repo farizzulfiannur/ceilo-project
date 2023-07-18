@@ -44,7 +44,6 @@
 <body class="crm_body_bg">
 
 
-
     <nav class="sidebar vertical-scroll  ps-container ps-theme-default ps-active-y">
         <div class="logo d-flex justify-content-between">
             <a href="index.html"><img src="{{ asset('assets/admin/img/ceilologo.png') }}" alt="Ceilo Logo"></a>
@@ -82,18 +81,29 @@
                 </ul> -->
             </li>
             <li class="mm-active">
-                <a href="#" aria-expanded="false">
+                <a href="{{ route('adminproduct') }}" aria-expanded="false">
 
                     <div class="icon_menu">
-                        <img src="{{ asset('assets/admin/img/menu-icon/contact.svg') }}" alt="">
+                        <img src="{{ asset('assets/admin/img/menu-icon/product.svg') }}" alt="">
                     </div>
                     <span> Product </span>
                 </a>
-                <!-- <ul>
-                    <li><a href="index.html">Marketing</a></li>
-                    <li><a class="active" href="index_2.html">Default</a></li>
-                    <li><a href="index_3.html">Dark Menu</a></li>
-                </ul> -->
+            </li>
+            <li class="mm-active">
+                <a href="{{ route('adminkata') }}" aria-expanded="false">
+                    <div class="icon_menu">
+                        <img src="{{ asset('assets/admin/img/menu-icon/multiuser.svg') }}" alt="">
+                    </div>
+                    <span> Kata Mereka </span>
+                </a>
+            </li>
+            <li class="mm-active">
+                <a href="{{ route('adminclient') }}" aria-expanded="false">
+                    <div class="icon_menu">
+                        <img src="{{ asset('assets/admin/img/menu-icon/clientss.jpg') }}" alt="">
+                    </div>
+                    <span> Client </span>
+                </a>
             </li>
         </ul>
     </nav>
@@ -146,7 +156,7 @@
                                     <div class="white_box_tittle list_header">
                                         <h4> </h4>
                                         <div class="box_right d-flex lms_block">
-                                            <div class="serach_field_2">
+                                            <div class="serach_field_2 d-none">
                                                 <div class="search_inner">
                                                     <form Active="#">
                                                         <div class="search_field">
@@ -183,7 +193,7 @@
                                                             $a++;
                                                         @endphp
                                                 <tr>
-                                                    <th scope="row"> <a href="#" class="question_content"> {{ $a }} </a></th>
+                                                    <th scope="row">{{ $a }}</th>
                                                     <td>{{ $ct->full_name }}  </td>
                                                     <td>{{ $ct->email }}</td>
                                                     <td>{{ $ct->message }}</td>

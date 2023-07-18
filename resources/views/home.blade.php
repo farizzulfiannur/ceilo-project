@@ -2,444 +2,389 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Ceilo Official</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
 
-    <!-- Bootstrap core CSS -->
-    <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
 
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="{{ asset('assets/css/fontawesome.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/templatemo-eduwell-style.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/owl.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/lightbox.css') }}">
 
-    <style>
-        .float {
-            position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 40px;
-            right: 40px;
-            background-color: #25d366;
-            color: #FFF;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 30px;
-            box-shadow: 2px 2px 3px #999;
-            z-index: 100;
-        }
+    <!-- Favicons -->
+    <link href="{{ asset('assets/desain2/assets/img3/logo-rv.png') }}" rel="icon">        
+    <!-- Vendor CSS Files -->
+    <link href="{{ asset('assets/desain2/assets/vendor/aos/aos.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/desain2/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/desain2/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/desain2/assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/desain2/assets/vendor/remixicon/remixicon.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/desain2/assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
 
-        .float:hover {
-            color: rgba(219, 138, 222, 1);
-            background-color: #dededef5;
-        }
-
-        .my-float {
-            margin-top: 16px;
-        }
-    </style>
-
+    <!-- Template Main CSS File -->
+    <link href="{{ asset('assets/desain2/assets/css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/desain2/assets/css/whatsapp.css') }}" rel="stylesheet">
 </head>
 
 <body>
 
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top">
+        <div class="container-fluid container-xl d-flex align-items-center
+        justify-content-between">
 
-    <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky">
+            <a href="#" class="logo d-flex align-items-center">
+                <img src="assets/images1/ceilologo.png" alt="Ceilo Logo">
+            </a>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                    <li><a class="nav-link scrollto" href="#about">About</a></li>
+                    <li><a class="nav-link scrollto" href="#product">Product</a></li>
+                    <li><a class="nav-link scrollto" href="#inspiration">Inspiration</a></li>
+                    <li><a class="nav-link scrollto" href="#komentar">Kata Mereka</a></li>
+                    <li><a class="nav-link scrollto" href="#client">Client</a></li>
+                    <li><a class="getstarted scrollto" href="{{ route('contactku') }}">GET IN TOUCH</a></li>
+                    {{-- <li><a class="getstarted scrollto getintouch" id="getintouch">GET IN TOUCH</a></li> --}}
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+        </div>
+    </header><!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="hero d-flex align-items-center">
+
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
-                        <a href="indexku.html" class="logo">
-                            <img src="assets/images1/ceilologo.png" alt="Ceilo Logo" width="80px" height="80px">
+            <div class="row cooba">
+                {{-- <div class="col-lg-6 d-flex flex-column justify-content-center"> --}}
+                <div style="margin-top: 110px" class="col-lg-6 d-flex justify-content-center">
+                    <h2 data-aos="fade-up" data-aos-delay="400" class="fw-bold text-dark"
+                        style="text-align: justify; font-size: 30px;">Bunga Hias Artificial & Peralatan Rumah Tangga
+                        Terbaik No.1 dengan Harga Terjangkau
+                    </h2>
+                </div>
+                <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+                    <img src="{{ asset('assets/desain2/assets/img/test2.png') }}" class="" alt="Pecel">
+                </div>
+            </div>
+        </div>
+
+    </section><!-- End Hero -->
+
+    <main id="main">
+        <!-- ======= About Section ======= -->
+        <section id="about" class="features">
+
+            <div class="container" data-aos="fade-up">
+                <div class="row">
+
+                    <div class="col-lg-6 ps-5 ">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="2000">
+                                    <img src="{{ asset('assets/desain2/assets/img3/image-flower.jpg') }}"
+                                        class="img-fluid" style="border-radius: 20px;" width="500px" alt="">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <img src="{{ asset('assets/desain2/assets/img3/bunga.jpeg') }}" class="img-fluid"
+                                        style="border-radius: 20px;" width="500px" alt="">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <img src="{{ asset('assets/desain2/assets/img3/cactus.jpg') }}" class="img-fluid"
+                                        style="border-radius: 20px;" width="500px" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
+                        <div class="row align-self-center gy-4">
+                            <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
+                                <div class=" d-flex align-items-center">
+                                    <h1 style="color: #6f3d94; font-weight: 900; font-size: 40px; ">About Us</h1>
+                                </div>
+                            </div>
+                            <div class="col-md-12 pe-5" data-aos="zoom-out" data-aos-delay="200">
+                                <div class="d-flex align-items-center">
+                                    <p
+                                        style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; text-align: justify;">
+                                        &nbsp;&nbsp;&nbsp;
+                                        Ceilo hadir sebagai solusi untuk Anda yang ingin mempunyai bunga atau tanaman
+                                        tanpa perlu
+                                        perawatan extra dengan jaminan awet seumur hidup, harga ramah dikantong.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-12 pe-5" data-aos="zoom-out" data-aos-delay="200">
+                                <div class="d-flex align-items-center">
+                                    <p
+                                        style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; text-align: justify;">
+                                        &nbsp;&nbsp;
+                                        Tidak hanya itu Ceilo juga mempunyai produk peralatan rumah tangga dengan
+                                        kualitas terbaik.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+        </section>
+
+        <!-- ======= Product Section ======= -->
+        <section id="product" class="testimonials">
+
+            <div class="container" data-aos="fade-up">
+
+                <header class="section-header">
+                    <p style="color: #6f3d94; font-weight: 900;">Product</p>
+                </header>
+
+                <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
+                    <div class="swiper-wrapper">
+
+                        @foreach ($product as $p)
+                            <div class="swiper-slide">
+                                <a href="{{ $p->product_link }}">
+                                    <div class="testimonial-item">
+                                        <div class="mx-auto">
+                                            {{-- <img src="{{ asset('assets/desain2/assets/img3/bunga.jpeg') }}" --}}
+                                            <img src="{{ asset('productImg/' . $p->product_img) }}" class="img-fluid"
+                                                alt=""
+                                                style="border-radius: 15px; width: 272px; height: 204px;">
+                                            <h3 class="mt-4 text-center" style="font-size: 18px; color: #6f3d94;">
+                                                {{ $p->product_category }} </h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        @endforeach
+                        <!-- End testimonial item -->
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Inspiration -->
+
+        <section id="inspiration" class="">
+            <div class="container" data-aos="fade-up">
+                <!-- Feature Tabs -->
+                <div class="row feture-tabs" data-aos="fade-up">
+                    <div class="col-lg-6">
+                        <h3 style="font-weight: 900; color: #6f3d94; font-size: 40px; margin-left: 76px"> Inspiration
+                        </h3>
+
+                        <a href="https://www.youtube.com/@ceilo.official">
+                            <div class="btn-inspiration">
+                                <img src="{{ asset('assets/desain2/assets/img3/yt-logo.svg') }}" alt=""
+                                    width="55px" height="55px">
+                                &nbsp;&nbsp; YOUTUBE
+                            </div>
                         </a>
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
-                        <ul class="nav">
-                            <li><a href="#top" class="active">Home</a></li>
-                            <li><a href="#about_us">About Us</a></li>
-                            <li><a href="#clients">Clients</a></li>
-                            <li><a href="#contact-section">Contact Us</a></li>
-                            <li><a href="/product ">Product</a></li>
-                        </ul>
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
+                        <a href="">
+                            <div class="btn-inspiration">
+                                <img src="{{ asset('assets/desain2/assets/img3/blog.png') }}" alt=""
+                                    width="50px" height="50px">
+                                &nbsp;&nbsp;&nbsp; BLOG
+                            </div>
                         </a>
-                        <!-- ***** Menu End ***** -->
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- ***** Header Area End ***** -->
-
-    <!-- ***** Main Banner Area Start ***** -->
-    <section class="main-banner" id="top">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 align-self-center">
-                    <div class="header-text">
-                        <!-- <h6>Welcome to our school</h6> -->
-                        <h2>Dapatkan Peralatan Hias <em>Murah Disini !</em></h2>
-                        <div class="main-button-gradient">
-                            <div class="scroll-to-section"><a href="#contact-section">Ayo Belanja !</a></div>
-                        </div>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="right-image">
-                        <!-- <img src="assets/images/banner-right-image.png" alt=""> -->
-                        <img src="assets/images1/header-image.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Main Banner Area End ***** -->
-
-    <section class="services" id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-heading">
-                        <h6>Our Product</h6>
-                        <h4>Highlight <em>Product</em></h4>
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="owl-service-item owl-carousel">
-                        <div class="item">
-                            <div class="service-item">
-                                <div class="icon">
-                                    <img src="assets/images1/cactus_sukulen.png" width="80px" height="80px"
+                    <div class="col-lg-6">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="2000">
+                                    <img src="{{ asset('assets/desain2/assets/img3/image-flower.jpg') }}"
+                                        class="img-fluid" style="border-radius: 20px;" width="500px"
                                         alt="">
                                 </div>
-                                <h4>Kaktus Sukulen Artificial</h4>
-                                <p>Rp. 27.400 </p>
-                                <div class="main-button-gradient">
-                                    <div class="scroll-to-section ops"><a class="mt-4" style="padding: 6px 6px;"
-                                            href="#">Details</a>
-                                    </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <img src="{{ asset('assets/desain2/assets/img3/bunga.jpeg') }}" class="img-fluid"
+                                        style="border-radius: 20px;" width="500px" alt="">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <img src="{{ asset('assets/desain2/assets/img3/cactus.jpg') }}" class="img-fluid"
+                                        style="border-radius: 20px;" width="500px" alt="">
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="service-item">
-                                <div class="icon">
-                                    <img src="assets/images1/bunga_matahari.png" width="80px" height="80px"
-                                        alt="">
-                                </div>
-                                <h4>Bunga Matahari Artificial</h4>
-                                <p>Rp. 21.500 </p>
-                                <div class="main-button-gradient">
-                                    <div class="scroll-to-section ops"><a class="mt-4" style="padding: 6px 6px;"
-                                            href="#">Details</a>
-                                    </div>
-                                </div>
+                        {{-- <img src="{{ asset('assets/desain2/assets/img3/cactus.jpg') }}" style="border-radius: 10px"
+                            class="img-fluid" alt="" width="540px"> --}}
+                    </div>
+
+                </div><!-- End Feature Tabs -->
+            </div>
+        </section>
+
+        <!-- End Inspiration -->
+
+        <!-- ====== Komentar Section ========= -->
+        <section id="komentar" class="komentar">
+            <div class="container">
+                <div class="row">
+                    <div class="judul col-12" data-aos="fade-up">
+                        <h1> Kata Mereka</h1>
+                    </div>
+                    @foreach ($katamereka as $komen)
+                        <div class=" col-md-12 col-xl-5">
+                            <div class="user" data-aos="fade-up">
+                                <img src="{{ asset('testiImg/' . $komen->testi_img) }}" alt=""
+                                    width="60px" height="103px">
+                                <h3 class="mt-2">{{ $komen->testi_name }}</h3>
+                                <p> {{ $komen->testi_desc }} </p>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="service-item">
-                                <div class="icon">
-                                    <img src="assets/images1/bunga_krisan.png" width="80px" height="80px"
-                                        alt="">
-                                </div>
-                                <h4>Bunga Krisan Hias Artificial</h4>
-                                <p>Rp. 44.500 </p>
-                                <div class="main-button-gradient">
-                                    <div class="scroll-to-section ops"><a class="mt-4" style="padding: 6px 6px;"
-                                            href="#">Details</a>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="col-1">
+
                         </div>
-                        <div class="item">
-                            <div class="service-item">
-                                <div class="icon">
-                                    <img src="assets/images1/bunga_tulip.png" width="80px" height="80px"
-                                        alt="">
-                                </div>
-                                <h4>Bunga Tulip Hias Artificial</h4>
-                                <p>Rp. 38.196 </p>
-                                <div class="main-button-gradient">
-                                    <div class="scroll-to-section ops"><a class="mt-4" style="padding: 6px 6px;"
-                                            href="#">Details</a>
-                                    </div>
-                                </div>
-                            </div>
+                    @endforeach
+
+                    <div class="foot d-flex justify-content-center" data-aos="fade-up">
+                        <h2> " Berikan Sentuhan Terbaik Untuk Hasil Yang Indah "</h2>
+                    </div>
+                </div>
+        </section>
+
+        <!-- ======= Client Section ======= -->
+        <section id="client" class="values">
+
+            <div class="container" data-aos="fade-up">
+
+                <header class="section-header">
+                    <p>Client</p>
+                </header>
+
+                <div class="row d-flex justify-content-center">
+                    @foreach ($client as $c)
+                        <div class="col-lg-3 col-md-6 mt-3 mb-2" data-aos="fade-up" data-aos-delay="200">
+                            <img src="{{ asset('clientImg/' . $c->client_img) }}"
+                                style="display: block; margin: auto;" class="img-fluid" alt=""
+                                height="150px" width="200px">
+                            <p style="text-align: center;"> {{ $c->client_name }} </p>
+                        </div>
+                    @endforeach
+
+                </div>
+
+            </div>
+
+        </section><!-- End Values Section -->
+
+        <!-- ======= Footer ======= -->
+        <footer id="footer" class="footer">
+
+            <div class="footer-newsletter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h3>Ingin dapat Cuan Lebih ? </h3>
+                            <h1>Segera Gabung Jadi Reseller Ceilo</h1>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section class="simple-cta" id="about_us">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 offset-lg-1">
-                    <div class="left-image">
-                        <img src="assets/images/cta-left-image.png" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-5 align-self-center">
-                    <h4>About Us</h4>
-                    <p>CV. Ingat Selalu Ceilo adalah sebuah perusahaan retail berbasis start up yang
-                        berdomisili di Surabaya. Ceilo merupakan perusahaan yang menjual berbagai macam
-                        bunga hias artificial flower dan home appliances dengan harga grosir dan kualitas
-                        produk yang bagus. Produk yang Ceilo jual yakni bunga hias artificial atau imitasi dan
-                        peralatan rumah tangga.</p>
-                    <!-- <div class="white-button">
-            <a href="contact-us.html">View Courses</a>
-          </div> -->
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="testimonials" id="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-heading">
-                        <h6>Testimonials</h6>
-                        <h4>Our <em>Clients</em></h4>
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="owl-testimonials owl-carousel" style="position: relative; z-index: 5;">
-                        <div class="item">
-                            <p>“Praesent accumsan condimentum arcu, id porttitor est semper nec. Nunc diam lorem."</p>
-                            <h4>Catherine Walk</h4>
-                            <span>CEO &amp; Founder</span>
-                            <img src="assets/images/quote.png" alt="">
-                        </div>
-                        <div class="item">
-                            <p>“Praesent accumsan condimentum arcu, id porttitor est semper nec. Nunc diam lorem.”</p>
-                            <h4>David Martin</h4>
-                            <span>CTO of Tech Company</span>
-                            <img src="assets/images/quote.png" alt="">
-                        </div>
-                        <div class="item">
-                            <p>“Praesent accumsan condimentum arcu, id porttitor est semper nec. Nunc diam lorem.”</p>
-                            <h4>Sophia Whity</h4>
-                            <span>CEO and Co-Founder</span>
-                            <img src="assets/images/quote.png" alt="">
-                        </div>
-                        <div class="item">
-                            <p>“Praesent accumsan condimentum arcu, id porttitor est semper nec. Nunc diam lorem.”</p>
-                            <h4>Helen Shiny</h4>
-                            <span>Tech Officer</span>
-                            <img src="assets/images/quote.png" alt="">
-                        </div>
-                        <div class="item">
-                            <p>“Praesent accumsan condimentum arcu, id porttitor est semper nec. Nunc diam lorem.”</p>
-                            <h4>George Soft</h4>
-                            <span>Gadget Reviewer</span>
-                            <img src="assets/images/quote.png" alt="">
-                        </div>
-                        <div class="item">
-                            <p>“Praesent accumsan condimentum arcu, id porttitor est semper nec. Nunc diam lorem.”</p>
-                            <h4>Andrew Hall</h4>
-                            <span>Marketing Manager</span>
-                            <img src="assets/images/quote.png" alt="">
-                        </div>
-                        <div class="item">
-                            <p>“Praesent accumsan condimentum arcu, id porttitor est semper nec. Nunc diam lorem.”</p>
-                            <h4>Maxi Power</h4>
-                            <span>Fashion Designer</span>
-                            <img src="assets/images/quote.png" alt="">
-                        </div>
-                        <div class="item">
-                            <p>“Praesent accumsan condimentum arcu, id porttitor est semper nec. Nunc diam lorem.”</p>
-                            <h4>Olivia Too</h4>
-                            <span>Creative Designer</span>
-                            <img src="assets/images/quote.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact-us" id="contact-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7">
-                    <div class="videoWrapper">
-
-                        <!-- You just need to go to Google Maps for your own map point, and copy the embed code from Share -> Embed a map section -->
-                        <iframe src="//www.youtube.com/embed/DjlOulLbrQ8" frameborder="0" allowfullscreen
-                            class="video"></iframe>
-
-
-                        <!-- <div class="row">
-              <div class="col-lg-4 offset-lg-1">
-                <div class="contact-info">
-                  <div class="icon">
-                    <i class="fa fa-phone"></i>
-                  </div>
-                  <h4>Phone</h4>
-                  <span>010-020-0340</span>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="contact-info">
-                  <div class="icon">
-                    <i class="fa fa-phone"></i>
-                  </div>
-                  <h4>Mobile</h4>
-                  <span>090-080-0760</span>
-                </div>
-              </div>
-            </div> -->
-                    </div>
-                </div>
-                <div class="col-lg-1">
-
-                </div>
-                <div class="col-lg-4">
-                    <form id="contact" action="{{ route('sendcontact') }}" method="POST">
-                        @csrf
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="section-heading">
-                                    <h4>CONTACT <em>US</em></h4>
-                                    <p>SARAN DAN KRITIK DAPAT DITULISKAN PADA FORM BERIKUT </p>
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row gy-4">
+                        <div class="col-lg-3 col-md-12 footer-info">
+                            <span>Stalk us on</span>
+                            <div class="row">
+                                <div class="social-links col-1">
+                                    <a href="https://www.tiktok.com/@ceilo.official" class="tiktok"><i
+                                            class="bi bi-tiktok" style="font-weight: 600"></i></a>
+                                </div>
+                                <div class="links col-6 ">
+                                    <a href="https://www.tiktok.com/@ceilo.official" class="tiktoks">
+                                        <p style="font-weight: 600"> Ceilo.official </p>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="col-lg-12">
-                                @if (session('gagalcontact'))
-                                    <div class="alert alert-danger">
-                                      {{ session('gagalcontact') }}
-                                    </div>
-                                @endif
-
-                                @if (session('berhasilcontact'))
-                                    <div class="alert alert-success">
-                                        {{ session('berhasilcontact') }}
-                                    </div>
-                                @endif
-                                <fieldset>
-                                    <input type="name" name="full_name" id="name" placeholder="Full Name"
-                                        autocomplete="on" required>
-                                </fieldset>
-                            </div>
-                            <div class="col-lg-12">
-                                <fieldset>
-                                    <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*"
-                                        placeholder="Your Email" required="">
-                                </fieldset>
-                            </div>
-                            <div class="col-lg-12">
-                                <fieldset>
-                                    <textarea name="message" id="message" placeholder="Your Message"></textarea>
-                                </fieldset>
-                            </div>
-                            <div class="col-lg-12">
-                                <fieldset>
-                                    <button type="submit" id="form-submit" class="main-gradient-button">Send
-                                        Message</button>
-                                </fieldset>
+                            <div class="row mt-2">
+                                <div class="social-links col-1">
+                                    <a href="https://www.instagram.com/Ceiloproject.id/" class="instagram"><i
+                                            class="bi bi-instagram" style="font-weight: 600"></i></a>
+                                </div>
+                                <div class="links col-6 ">
+                                    <a href="https://www.instagram.com/Ceiloproject.id/" class="instagrams">
+                                        <p style="font-weight: 600"> Ceiloproject.id </p>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </form>
-                </div>
-                <div class="col-lg-12">
-                    <ul class="social-icons">
-                        <!-- Icon : https://iconduck.com/icons/244753/lazada -->
-                        <li><a href="#"> <img src="assets/images1/whatsapp-logo.svg"
-                                    style="padding: 7px; padding-top: 2px;" alt="Whatsapp"></a></li>
-                        <li><a href="https://www.tokopedia.com/ceilo"><img src="assets/images1/tokopedia.svg"
-                                    style="padding: 7px; padding-top: 2px;" alt="Tokopedia"> </a></li>
-                        <li><a href="https://www.lazada.co.id/shop/ceilo-project"> <img
-                                    src="assets/images1/lazada.svg" style="padding: 7px; padding-top: 2px;"
-                                    alt="Lazada"> </a></li>
-                        <li><a href="https://shopee.co.id/ceilo.official"> <img src="assets/images1/brand-shopee.svg"
-                                    style="padding: 7px; padding-top: 2px;" alt="Lazada"> </a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-12">
-                    <p class="copyright">Copyright © 2023 Ceilo Official., Ltd. All Rights Reserved.
 
-                        <br>Design: <a rel="sponsored" target="_blank">Mochammad Fariz Zulfiannur</a>
-                    </p>
+                        <div class="col-lg-6 col-6 footer-links text-center"
+                            style="border-right: 5px solid #7E519F; border-left: 5px solid #7E519F;">
+                            <div class="container">
+                                <span> CV. Ingat Selalu Ceilo </span>
+                                <p> Supplier Artificial Flowers, Home Decor, <br> Home Appliances, Souvenir, Gift. </p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-12 footer-info">
+                            <span>Info & Contact</span>
+                            <div class="row">
+                                <div class="social-links col-1">
+                                    <a href="#" class="phone"><i class="bi bi-phone"
+                                            style="font-weight: 600"></i></a>
+                                </div>
+                                <div class="links col-6 ">
+                                    <p class="info-contact" style="font-weight: 600"> 087859913230 </p>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="social-links col-1">
+                                    <a href="#" class="mail"><i class="bi bi-envelope"
+                                            style="font-weight: 600"></i></a>
+                                </div>
+                                <div class="links col-6 ">
+                                    <p class="info-contact" style="font-weight: 600"> Ceiloproject.id@gmail.com </p>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="social-links col-1">
+                                    <a href="" class="geo"><i class="bi bi-geo-alt"
+                                            style="font-weight: 600"></i></a>
+                                </div>
+                                <div class="links col-10 ">
+                                    <p class="info-contact" style="font-weight: 600">Jl. Rungkut Lor Gg. III D / 51
+                                        Surabaya </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" mt-2 footer-ceilo">
+                        <h1> 2023 © CV. Ingat Selalu Ceilo </h1>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202."
-        class="float" target="_blank">
-        <i class="fa fa-whatsapp my-float"></i>
-    </a>
+        </footer><!-- End Footer -->
 
-    <!-- Scripts -->
-    <!-- Bootstrap core JavaScript -->
-    <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
-    <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+        <img class="text-wa" src="{{ asset('assets/desain2/assets/img3/wa-chat3.png') }}" alt="">
+        <a href="https://api.whatsapp.com/send?phone=6287859913230&text=Hai, Selamat datang di CV.Ingat Selalu Ceilo. Ada yang bisa dibantu?"
+            class="float" target="_blank">
+            <i class="bi bi-whatsapp my-float"></i>
+        </a>
 
-    <script src="{{ asset('assets/js/isotope.min.js') }}"></script>
-    <script src="{{ asset('assets/js/owl-carousel.js') }}"></script>
-    <script src="{{ asset('assets/js/lightbox.js') }}"></script>
-    <script src="{{ asset('assets/js/tabs.js') }}"></script>
-    <script src="{{ asset('assets/js/video.js') }}"></script>
-    <script src="{{ asset('assets/js/slick-slider.js') }}"></script>
-    <script src="{{ asset('assets/js/custom.js') }}"></script>
-    <script>
-        //according to loftblog tut
-        $('.nav li:first').addClass('active');
+        <!-- Vendor JS Files -->
+        <script src="{{ asset('assets/desain2/assets/vendor/purecounter/purecounter_vanilla.js') }}"></script>
+        <script src="{{ asset('assets/desain2/assets/vendor/aos/aos.js') }}"></script>
+        <script src="{{ asset('assets/desain2/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }} "></script>
+        <script src="{{ asset('assets/desain2/assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+        <script src="{{ asset('assets/desain2/assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+        <script src="{{ asset('assets/desain2/assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+        <script src="{{ asset('assets/desain2/assets/vendor/php-email-form/validate.js') }}"></script>
 
-        var showSection = function showSection(section, isAnimate) {
-            var
-                direction = section.replace(/#/, ''),
-                reqSection = $('.section').filter('[data-section="' + direction + '"]'),
-                reqSectionPos = reqSection.offset().top - 0;
+        <!-- Template Main JS File -->
+        <script src="{{ asset('assets/desain2/assets/js/main.js') }}"></script>
+        {{-- Jquery --}}
+        <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+            crossorigin="anonymous"></script>
 
-            if (isAnimate) {
-                $('body, html').animate({
-                        scrollTop: reqSectionPos
-                    },
-                    800);
-            } else {
-                $('body, html').scrollTop(reqSectionPos);
-            }
-
-        };
-
-        var checkSection = function checkSection() {
-            $('.section').each(function() {
-                var
-                    $this = $(this),
-                    topEdge = $this.offset().top - 80,
-                    bottomEdge = topEdge + $this.height(),
-                    wScroll = $(window).scrollTop();
-                if (topEdge < wScroll && bottomEdge > wScroll) {
-                    var
-                        currentId = $this.data('section'),
-                        reqLink = $('a').filter('[href*=\\#' + currentId + ']');
-                    reqLink.closest('li').addClass('active').
-                    siblings().removeClass('active');
-                }
-            });
-        };
-
-        $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function(e) {
-            e.preventDefault();
-            showSection($(this).attr('href'), true);
-        });
-
-        $(window).scroll(function() {
-            checkSection();
-        });
-    </script>
 </body>
 
 </html>

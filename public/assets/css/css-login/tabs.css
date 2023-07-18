@@ -1,0 +1,202 @@
+/***********************************************
+
+	Template Name: Tabs Login & Registration Form
+	Author: BootstrapLayouts
+	URI: http://www.bootstraplayouts.com
+
+***********************************************/
+html,body{
+	background: linear-gradient(to left,#0066cc, #b3ecff );
+	height:100%;
+}
+/**Panel**/
+
+.panel{
+	margin-top:60px;
+	border:0px;
+}
+
+.panel-heading{
+	border:0px;
+}
+
+.panel-body{
+	/* background-color:#99ccff; */
+	background: linear-gradient(
+		-145deg,
+		rgba(219, 138, 222, 1) 0%,
+		rgba(246, 191, 159, 1) 100%
+	  );
+	border:1px solid #99ccff;
+}
+
+.title{
+	margin-bottom:40px;
+	color:white;
+	font-weight:bold;
+}
+
+.btn-group-justified a{
+	color:rgba(219, 138, 222, 1);
+	font-weight:bold;
+}
+
+.btn-group-justified a:hover{
+	color:white;
+}
+
+/**Login Form**/
+
+#login_form{
+	display:block;
+}
+
+.nopadding{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+}
+
+.btn-group a{
+	border-radius:0;
+}
+
+.checkbox .remember_me{
+	color:white;
+}
+
+.new_here p{
+	border-top:1px solid white;
+	color:white;
+	padding-top:10px;
+}
+
+#login_link.active{
+	background-color:rgb(208, 76, 212);
+	color:white;
+}
+
+#login_link{
+	border:1px solid #d87dc1;
+}
+
+.butn .btn-default{
+	margin-top:20px;
+	border-radius:0px;
+	color:#d87dc1;
+	font-weight:bold;
+}
+
+.butn .btn-default:hover{
+	background-color:#d87dc1;
+	border:1px solid white;
+	color:white;
+}
+
+.login_form_icons{
+	color:white;
+}
+
+#login_form .input-group-addon{
+	background-color:#d87dc1;
+	border:0px;
+}
+
+/**Registration Form**/
+
+#registration_form{
+	display:none;
+}
+
+.input{
+	border-radius:0px;
+	background-color:#f7f7f7;
+	border:none;
+}
+
+.checkbox .check{
+	color:white;
+}
+
+.butn{
+	margin-top:20px;
+}
+
+.already_member {
+	padding-top:15px;
+	color:white;
+}
+	
+.forgot{
+	margin:20px 0px 10px 0px;
+}
+
+.newhere {
+	border-top:1px solid lightgrey;
+	padding-top:10px;
+}
+
+#registration_link.active{
+	background-color:rgb(208, 76, 212);
+	color:white;	
+}
+
+#registration_link{
+	border:1px solid #d87dc1;
+}
+
+#registration_form .input-group-addon{
+	background-color:#d87dc1;
+	border:0px;
+}
+
+.registration_form_icons{
+	color:white;
+}
+
+/**Social Buttons**/
+
+.social-buttons .btn-default{
+	border-radius:0px;
+	margin-bottom:10px;
+	margin-top:5px;
+}
+
+.social-buttons i{
+	margin-right:5px;
+}
+
+.social-buttons .btn_facebook{
+	background-color:#003380;
+	color:white;
+	border:0px;
+}
+
+.social-buttons .btn_twitter{
+	background-color:skyblue;
+	color:white;
+	border:0px;
+}
+.social-buttons .btn_gmail{
+	background-color:#b30000;
+	color:white;
+	border:0px;
+}
+
+/**Media Query**/
+
+@media (max-width:800px){
+.social-buttons .btn-default{
+	margin-bottom:10px;
+}
+
+}
+
+#footer{
+	color:White;
+	margin-top:10px;
+}
+
+#footer a{
+	color:White;
+	text-decoration:underline;
+}

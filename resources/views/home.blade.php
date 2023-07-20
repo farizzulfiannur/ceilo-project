@@ -65,8 +65,8 @@
                 {{-- <div class="col-lg-6 d-flex flex-column justify-content-center"> --}}
                 <div style="margin-top: 110px" class="col-lg-6 d-flex justify-content-center">
                     <h2 data-aos="fade-up" data-aos-delay="400" class="fw-bold text-dark"
-                        style="text-align: justify; font-size: 30px;">Bunga Hias Artificial & Peralatan Rumah Tangga
-                        Terbaik No.1 dengan Harga Terjangkau
+                        style="text-align: justify; font-size: 27px;">Supplier Bunga Hias Artificial & Peralatan Rumah Tangga
+                        Terbaik No.1 di Indonesia dengan Harga Terjangkau
                     </h2>
                 </div>
                 <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">

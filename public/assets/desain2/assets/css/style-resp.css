@@ -1,0 +1,49 @@
+@media screen and (max-width: 476px){
+
+    .komentar .judul h1 {
+        text-align: center;
+        font-weight: 900;
+        color: #6f3d94;
+        font-family: "Jua", sans-serif;
+    }
+    .komentar .user {
+        width: 300px;
+        height: 142px;
+        text-align: center;
+        padding: 15px;
+        padding-left: 50px;
+        box-sizing: border-box;
+        background: #6f3d94;
+        border-radius: 40px;
+        box-shadow: 0 10px 20px -5px #00000061;
+        position: relative;
+        margin-top: 40px;
+        margin-left: 40px;
+    }
+    .komentar .user img {
+        width: 90px;
+        height: 90px;
+        margin-left: 10px;
+        border-radius: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        border-radius: 20px;
+        background-color: white;
+        position: absolute;
+        top: 15px;
+        left: 18%;
+        transform: translateX(-110%);
+    }
+    .komentar .user h3 {
+        margin-left: 20px;
+        font-size: 18px;
+    }
+    .komentar .user p {
+        margin-left: 20px;
+        font-size: 8.5px;
+    }
+    .komentar h2 {
+        text-align: center;
+    }
+}

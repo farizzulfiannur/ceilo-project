@@ -15,7 +15,7 @@
 
 
     <!-- Favicons -->
-    <link href="{{ asset('assets/desain2/assets/img3/logo-rv.png') }}" rel="icon">        
+    <link href="{{ asset('assets/desain2/assets/img3/logo-rv.png') }}" rel="icon">
     <!-- Vendor CSS Files -->
     <link href="{{ asset('assets/desain2/assets/vendor/aos/aos.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/desain2/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -26,7 +26,25 @@
 
     <!-- Template Main CSS File -->
     <link href="{{ asset('assets/desain2/assets/css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/desain2/assets/css/style-resp.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/desain2/assets/css/whatsapp.css') }}" rel="stylesheet">
+
+    <style>
+        .cooba .edit {
+            margin-top: 110px;
+        }
+
+        .cooba .edit h2 {
+            text-align: justify;
+            font-size: 27px;
+        }
+
+        @media screen and (max-width: 476px) {
+            .cooba .edit {
+                margin-top: 0px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -63,9 +81,10 @@
         <div class="container">
             <div class="row cooba">
                 {{-- <div class="col-lg-6 d-flex flex-column justify-content-center"> --}}
-                <div style="margin-top: 110px" class="col-lg-6 d-flex justify-content-center">
-                    <h2 data-aos="fade-up" data-aos-delay="400" class="fw-bold text-dark"
-                        style="text-align: justify; font-size: 27px;">Supplier Bunga Hias Artificial & Peralatan Rumah Tangga
+                <div class="col-lg-6 d-flex justify-content-center edit">
+                    <h2 data-aos="fade-up" data-aos-delay="400" class="fw-bold text-dark">Supplier Bunga Hias Artificial
+                        & Peralatan Rumah
+                        Tangga
                         Terbaik No.1 di Indonesia dengan Harga Terjangkau
                     </h2>
                 </div>
@@ -82,9 +101,8 @@
         <section id="about" class="features">
 
             <div class="container" data-aos="fade-up">
-                <div class="row">
-
-                    <div class="col-lg-6 ps-5 ">
+                <div class="row res">
+                    <div class="col-lg-6 ps-lg-5 ps-md-0 ">
                         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active" data-bs-interval="2000">
@@ -105,15 +123,13 @@
                     <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
                         <div class="row align-self-center gy-4">
                             <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
-                                <div class=" d-flex align-items-center">
-                                    <h1 style="color: #6f3d94; font-weight: 900; font-size: 40px; ">About Us</h1>
+                                <div class=" d-flex align-items-center resp">
+                                    <h1>About Us</h1>
                                 </div>
                             </div>
                             <div class="col-md-12 pe-5" data-aos="zoom-out" data-aos-delay="200">
                                 <div class="d-flex align-items-center">
-                                    <p
-                                        style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; text-align: justify;">
-                                        &nbsp;&nbsp;&nbsp;
+                                    <p class="text-about">
                                         Ceilo hadir sebagai solusi untuk Anda yang ingin mempunyai bunga atau tanaman
                                         tanpa perlu
                                         perawatan extra dengan jaminan awet seumur hidup, harga ramah dikantong.
@@ -122,9 +138,7 @@
                             </div>
                             <div class="col-md-12 pe-5" data-aos="zoom-out" data-aos-delay="200">
                                 <div class="d-flex align-items-center">
-                                    <p
-                                        style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; text-align: justify;">
-                                        &nbsp;&nbsp;
+                                    <p class="text-about">
                                         Tidak hanya itu Ceilo juga mempunyai produk peralatan rumah tangga dengan
                                         kualitas terbaik.
                                     </p>
@@ -174,9 +188,9 @@
         <section id="inspiration" class="">
             <div class="container" data-aos="fade-up">
                 <!-- Feature Tabs -->
-                <div class="row feture-tabs" data-aos="fade-up">
-                    <div class="col-lg-6">
-                        <h3 style="font-weight: 900; color: #6f3d94; font-size: 40px; margin-left: 76px"> Inspiration
+                <div class="row fet" data-aos="fade-up">
+                    <div class="col-lg-6 col-md-12">
+                        <h3> Inspiration
                         </h3>
 
                         <a href="https://www.youtube.com/@ceilo.official">
@@ -194,7 +208,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-12">
                         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active" data-bs-interval="2000">
@@ -215,8 +229,7 @@
                         {{-- <img src="{{ asset('assets/desain2/assets/img3/cactus.jpg') }}" style="border-radius: 10px"
                             class="img-fluid" alt="" width="540px"> --}}
                     </div>
-
-                </div><!-- End Feature Tabs -->
+                </div>
             </div>
         </section>
 
@@ -232,9 +245,8 @@
                     @foreach ($katamereka as $komen)
                         <div class=" col-md-12 col-xl-5">
                             <div class="user" data-aos="fade-up">
-                                <img src="{{ asset('testiImg/' . $komen->testi_img) }}" alt=""
-                                    width="60px" height="103px">
-                                <h3 class="mt-2">{{ $komen->testi_name }}</h3>
+                                <img src="{{ asset('testiImg/' . $komen->testi_img) }}" alt="">
+                                <h3 class="mt-lg-1 mt-xl-2">{{ $komen->testi_name }}</h3>
                                 <p> {{ $komen->testi_desc }} </p>
                             </div>
                         </div>
@@ -293,23 +305,23 @@
                     <div class="row gy-4">
                         <div class="col-lg-3 col-md-12 footer-info">
                             <span>Stalk us on</span>
-                            <div class="row">
-                                <div class="social-links col-1">
+                            <div class="row sosmed">
+                                <div class="social-links kiri col-1">
                                     <a href="https://www.tiktok.com/@ceilo.official" class="tiktok"><i
                                             class="bi bi-tiktok" style="font-weight: 600"></i></a>
                                 </div>
-                                <div class="links col-6 ">
+                                <div class="links kiris col-6 ">
                                     <a href="https://www.tiktok.com/@ceilo.official" class="tiktoks">
                                         <p style="font-weight: 600"> Ceilo.official </p>
                                     </a>
                                 </div>
                             </div>
-                            <div class="row mt-2">
-                                <div class="social-links col-1">
+                            <div class="row sosmed mt-2">
+                                <div class="social-links kiri col-1">
                                     <a href="https://www.instagram.com/Ceiloproject.id/" class="instagram"><i
                                             class="bi bi-instagram" style="font-weight: 600"></i></a>
                                 </div>
-                                <div class="links col-6 ">
+                                <div class="links kiris col-6 ">
                                     <a href="https://www.instagram.com/Ceiloproject.id/" class="instagrams">
                                         <p style="font-weight: 600"> Ceiloproject.id </p>
                                     </a>
@@ -317,8 +329,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-6 col-6 footer-links text-center"
-                            style="border-right: 5px solid #7E519F; border-left: 5px solid #7E519F;">
+                        <div class="col-lg-6 col-md-12 footer-links text-center">
                             <div class="container">
                                 <span> CV. Ingat Selalu Ceilo </span>
                                 <p> Supplier Artificial Flowers, Home Decor, <br> Home Appliances, Souvenir, Gift. </p>
@@ -327,7 +338,7 @@
 
                         <div class="col-lg-3 col-md-12 footer-info">
                             <span>Info & Contact</span>
-                            <div class="row">
+                            <div class="row sosmeds">
                                 <div class="social-links col-1">
                                     <a href="#" class="phone"><i class="bi bi-phone"
                                             style="font-weight: 600"></i></a>
@@ -336,7 +347,7 @@
                                     <p class="info-contact" style="font-weight: 600"> 087859913230 </p>
                                 </div>
                             </div>
-                            <div class="row mt-2">
+                            <div class="row sosmeds mt-2">
                                 <div class="social-links col-1">
                                     <a href="#" class="mail"><i class="bi bi-envelope"
                                             style="font-weight: 600"></i></a>
@@ -345,7 +356,7 @@
                                     <p class="info-contact" style="font-weight: 600"> Ceiloproject.id@gmail.com </p>
                                 </div>
                             </div>
-                            <div class="row mt-2">
+                            <div class="row sosmeds mt-2">
                                 <div class="social-links col-1">
                                     <a href="" class="geo"><i class="bi bi-geo-alt"
                                             style="font-weight: 600"></i></a>

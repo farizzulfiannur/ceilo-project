@@ -116,7 +116,7 @@
                 padding-bottom: 6px;
                 padding-top: 6px;
                 padding-left: 13px;
-                width: 335px;
+                width: 320px;
                 margin-top: 20px;
                 margin-bottom: 20px;
                 margin-left: 10px;

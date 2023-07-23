@@ -180,6 +180,7 @@
                                                     <th scope="col">No</th>
                                                     <th scope="col">Name</th>
                                                     <th scope="col">Email</th>
+                                                    <th scope="col">Phone</th>
                                                     <th scope="col">Message</th>
                                                     <th scope="col"></th>
                                                 </tr>
@@ -196,6 +197,7 @@
                                                     <th scope="row">{{ $a }}</th>
                                                     <td>{{ $ct->full_name }}  </td>
                                                     <td>{{ $ct->email }}</td>
+                                                    <td>{{ $ct->phone }}</td>
                                                     <td>{{ $ct->message }}</td>
                                                     <td><a href="{{ route('deletecontact', [$ct->id]) }}" class="remove"><i class="fa fa-trash"></i></a></td>
                                                 </tr>

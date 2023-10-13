@@ -2703,3 +2703,10 @@ section {
     color: #6f3d94;
     margin-top: 40px;
 }
+
+/* Blog */
+.res h1{
+    color: #6f3d94; 
+    font-weight: 900; 
+    font-size: 40px; 
+}

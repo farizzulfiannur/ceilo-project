@@ -106,6 +106,14 @@
                     <span> Client </span>
                 </a>
             </li>
+            <li class="mm-active">
+                <a href="{{ route('adminBlog') }}" aria-expanded="false">
+                    <div class="icon_menu">
+                        <img src="{{ asset('assets/admin/img/menu-icon/blog.svg') }}" alt="">
+                    </div>
+                    <span> Blog </span>
+                </a>
+            </li>
         </ul>
     </nav>
 

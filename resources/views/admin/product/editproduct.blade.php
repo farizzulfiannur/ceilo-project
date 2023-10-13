@@ -51,62 +51,69 @@
             <div class="sidebar_close_icon d-lg-none">
                 <i class="ti-close"></i>
             </div>
-        </div>
-        <ul id="sidebar_menu">
-            <li class="mm-active">
-                <a href="{{ route('dashboard') }}" aria-expanded="false">
-
-                    <div class="icon_menu">
-                        <img src="{{ asset('assets/admin/img/menu-icon/dashboard.svg') }}" alt="">
-                    </div>
-                    <span>Dashboard</span>
-                </a>
-                <!-- <ul>
-                    <li><a href="index.html">Marketing</a></li>
-                    <li><a class="active" href="index_2.html">Default</a></li>
-                    <li><a href="index_3.html">Dark Menu</a></li>
-                </ul> -->
-            </li>
-            <li class="mm-active">
-                <a href="{{ route('contact') }}" aria-expanded="false">
-
-                    <div class="icon_menu">
-                        <img src="{{ asset('assets/admin/img/menu-icon/contact.svg') }}" alt="">
-                    </div>
-                    <span>Contact Us</span>
-                </a>
-                <!-- <ul>
-                    <li><a href="index.html">Marketing</a></li>
-                    <li><a class="active" href="index_2.html">Default</a></li>
-                    <li><a href="index_3.html">Dark Menu</a></li>
-                </ul> -->
-            </li>
-            <li class="mm-active">
-                <a href="{{ route('adminproduct') }}" aria-expanded="false">
-
-                    <div class="icon_menu">
-                        <img src="{{ asset('assets/admin/img/menu-icon/product.svg') }}" alt="">
-                    </div>
-                    <span> Product </span>
-                </a>
-            </li>
-            <li class="mm-active">
-                <a href="{{ route('adminkata') }}" aria-expanded="false">
-                    <div class="icon_menu">
-                        <img src="{{ asset('assets/admin/img/menu-icon/multiuser.svg') }}" alt="">
-                    </div>
-                    <span> Kata Mereka </span>
-                </a>
-            </li>
-            <li class="mm-active">
-                <a href="{{ route('adminclient') }}" aria-expanded="false">
-                    <div class="icon_menu">
-                        <img src="{{ asset('assets/admin/img/menu-icon/clientss.jpg') }}" alt="">
-                    </div>
-                    <span> Client </span>
-                </a>
-            </li>
-        </ul>
+            <ul id="sidebar_menu">
+                <li class="mm-active">
+                    <a href="#" aria-expanded="false">
+    
+                        <div class="icon_menu">
+                            <img src="{{ asset('assets/admin/img/menu-icon/dashboard.svg') }}" alt="">
+                        </div>
+                        <span>Dashboard</span>
+                    </a>
+                    <!-- <ul>
+                        <li><a href="index.html">Marketing</a></li>
+                        <li><a class="active" href="index_2.html">Default</a></li>
+                        <li><a href="index_3.html">Dark Menu</a></li>
+                    </ul> -->
+                </li>
+                <li class="mm-active">
+                    <a href="{{ route('contact') }}" aria-expanded="false">
+    
+                        <div class="icon_menu">
+                            <img src="{{ asset('assets/admin/img/menu-icon/contact.svg') }}" alt="">
+                        </div>
+                        <span>Contact Us</span>
+                    </a>
+                    <!-- <ul>
+                        <li><a href="index.html">Marketing</a></li>
+                        <li><a class="active" href="index_2.html">Default</a></li>
+                        <li><a href="index_3.html">Dark Menu</a></li>
+                    </ul> -->
+                </li>
+                <li class="mm-active">
+                    <a href="{{ route('adminproduct') }}" aria-expanded="false">
+    
+                        <div class="icon_menu">
+                            <img src="{{ asset('assets/admin/img/menu-icon/product.svg') }}" alt="">
+                        </div>
+                        <span> Product </span>
+                    </a>
+                </li>
+                <li class="mm-active">
+                    <a href="{{ route('adminkata') }}" aria-expanded="false">
+                        <div class="icon_menu">
+                            <img src="{{ asset('assets/admin/img/menu-icon/multiuser.svg') }}" alt="">
+                        </div>
+                        <span> Kata Mereka </span>
+                    </a>
+                </li>
+                <li class="mm-active">
+                    <a href="{{ route('adminclient') }}" aria-expanded="false">
+                        <div class="icon_menu">
+                            <img src="{{ asset('assets/admin/img/menu-icon/clientss.jpg') }}" alt="">
+                        </div>
+                        <span> Client </span>
+                    </a>
+                </li>
+                <li class="mm-active">
+                    <a href="{{ route('adminBlog') }}" aria-expanded="false">
+                        <div class="icon_menu">
+                            <img src="{{ asset('assets/admin/img/menu-icon/blog.svg') }}" alt="">
+                        </div>
+                        <span> Blog </span>
+                    </a>
+                </li>
+            </ul>
     </nav>
 
 

@@ -25,6 +25,7 @@
     <link href="{{ asset('assets/desain2/assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
 
     <!-- Template Main CSS File -->
+    <link href="{{ asset('assets/desain2/assets/css/style-resp.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/desain2/assets/css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/desain2/assets/css/whatsapp.css') }}" rel="stylesheet">
 
@@ -687,7 +688,7 @@
                                 &nbsp;&nbsp; YOUTUBE
                             </div>
                         </a>
-                        <a href="">
+                        <a href="{{ route('blog') }}">
                             <div class="btn-inspiration">
                                 <img src="{{ asset('assets/desain2/assets/img3/blog.png') }}" alt=""
                                     width="50px" height="50px">

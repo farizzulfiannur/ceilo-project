@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Ceilo Official</title>
     <!-- <link rel="icon" href="img/ceilologo.png" type="image/png"> -->
-
+    <!-- Favicons -->
+    <link href="{{ asset('assets/desain2/assets/img3/logo-rv.png') }}" rel="icon">    
     <link rel="stylesheet" href="{{ asset('assets/admin/css/bootstrap1.min.css') }}" />
 
     <link rel="stylesheet" href="{{ asset('assets/admin/vendors/themefy_icon/themify-icons.css') }}" />
@@ -42,6 +43,7 @@
 </head>
 
 <body class="crm_body_bg">
+
 
 
     <nav class="sidebar vertical-scroll  ps-container ps-theme-default ps-active-y">
@@ -155,70 +157,49 @@
                             <div class="white_card_header">
                                 <div class="box_header m-0">
                                     <div class="main-title">
-                                        <h2 class="m-0">Contact</h2>
+                                        <h2 class="m-0">Tambah Content Blog</h2>
+                                    </div>
+                                    <div class="col-6 d-flex justify-content-end">
+                                        <a class="btn-close btn-outline-danger" aria-label="close"
+                                            href="{{ route('adminBlog') }}" role="button"></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="white_card_body">
-                                <div class="QA_section">
-                                    <div class="white_box_tittle list_header">
-                                        <h4> </h4>
-                                        <div class="box_right d-flex lms_block">
-                                            <div class="serach_field_2 d-none">
-                                                <div class="search_inner">
-                                                    <form Active="#">
-                                                        <div class="search_field">
-                                                            <input type="text" placeholder="Search content here...">
-                                                        </div>
-                                                        <button type="submit"> <i class="ti-search"></i> </button>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                            {{-- <div class="add_button ms-2">
-                                                <a href="#" data-bs-toggle="modal" data-bs-target="#addcategory"
-                                                    class="btn_1">Add New</a>
-                                            </div> --}}
-                                        </div>
-                                    </div>
-                                    <div class="QA_table mb_30">
-
-                                        <table class="table lms_table_active ">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col">No</th>
-                                                    <th scope="col">Name</th>
-                                                    <th scope="col">Email</th>
-                                                    <th scope="col">Phone</th>
-                                                    <th scope="col">Message</th>
-                                                    <th scope="col"></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                    @php
-                                                        $a = 0;   
-                                                    @endphp
-                                                    @foreach ($contact as $ct)
-                                                        @php
-                                                            $a++;
-                                                        @endphp
-                                                <tr>
-                                                    <th scope="row">{{ $a }}</th>
-                                                    <td>{{ $ct->full_name }}  </td>
-                                                    <td>{{ $ct->email }}</td>
-                                                    <td>{{ $ct->phone }}</td>
-                                                    <td>{{ $ct->message }}</td>
-                                                    <td><a href="{{ route('deletecontact', [$ct->id]) }}" class="remove"><i class="fa fa-trash"></i></a></td>
-                                                </tr>
+                                <div class="card-body">
+                                    <form action=" {{ route('storeBlog') }} " method="POST" enctype="multipart/form-data">
+                                        @csrf
+                                        {{-- @if ($errors->any())
+                                            <div class="alert alert-danger">
+                                                <ul>
+                                                    @foreach ($errors->all() as $error)
+                                                        <li> {{ $error }} </li>
                                                     @endforeach
-                                            </tbody>
-                                        </table>
-                                    </div>
+                                                </ul>
+                                            </div>
+                                        @endif --}}
+                                        <div class="form-group mb-3">
+                                            <label for="titleBlog">Judul</label>
+                                            <input type="text" name="titleBlog" id="titleBlog"
+                                                class="form-control" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="descBlog" class="form-label">Deskripsi</label>
+                                            <textarea class="form-control" name="descBlog" id="descBlog" rows="3" required></textarea>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="formFile" class="form-label">Gambar</label>
+                                            <input class="form-control" name="imageBlog" type="file"
+                                                id="formFile" required>
+                                        </div>
+                                        <div class="d-flex justify-content-end">
+                                            <button type="submit" class="btn btn-primary">Tambah</button>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    {{-- <div class="col-12">
-                    </div> --}}
                 </div>
             </div>
         </div>

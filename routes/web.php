@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\adminController;
+use App\Http\Controllers\blogController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\homeController;
@@ -23,6 +24,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/',[homeController:: class,'index'])->name('index');
 Route::get('/product',[homeController::class,'product'])->name('product');
 Route::get('/contact',[homeController::class,'contactku'])->name('contactku');
+Route::get('/blog',[blogController::class,'blog'])->name('blog');
+Route::get('/blog/{id}',[blogController::class,'showBlog'])->name('showBlog');
 
 // Login Register Route 
 
@@ -65,3 +68,11 @@ Route::post('/admin/client/store',[ClientController::class,'storeclient'])->name
 Route::get('/admin/client/edit/{id}',[ClientController::class,'editclient'])->name('editclient')->middleware('auth');
 Route::post('/admin/client/update/{id}',[ClientController::class,'updateclient'])->name('updateclient')->middleware('auth');
 Route::get('/admin/client/delete/{id}',[ClientController::class,'deleteclient'])->name('deleteclient')->middleware('auth');
+
+// Blog 
+Route::get('admin/blog/add',[blogController::class,('addBlog')])->name('addBlog')->middleware('auth');
+Route::get('/admin/blog',[blogController::class,'adminBlog'])->name('adminBlog')->middleware('auth');
+Route::post('/admin/blog/store',[blogController::class,'storeBlog'])->name('storeBlog')->middleware('auth');
+Route::get('/admin/blog/edit/{id}',[blogController::class,'editBlog'])->name('editBlog')->middleware('auth');
+Route::post('/admin/blog/update/{id}',[blogController::class,'updateBlog'])->name('updateBlog')->middleware('auth');
+Route::get('/admin/blog/delete/{id}',[blogController::class,'deleteBlog'])->name('deleteBlog')->middleware('auth');

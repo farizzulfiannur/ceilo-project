@@ -53,7 +53,7 @@
         </div>
         <ul id="sidebar_menu">
             <li class="mm-active">
-                <a href="#" aria-expanded="false">
+                <a href="{{ route('dashboard') }}" aria-expanded="false">
 
                     <div class="icon_menu">
                         <img src="{{ asset('assets/admin/img/menu-icon/dashboard.svg') }}" alt="">
@@ -98,19 +98,11 @@
                 </a>
             </li>
             <li class="mm-active">
-                <a href="{{ route('adminclient') }}" aria-expanded="false">
+                <a href="#" aria-expanded="false">
                     <div class="icon_menu">
                         <img src="{{ asset('assets/admin/img/menu-icon/clientss.jpg') }}" alt="">
                     </div>
                     <span> Client </span>
-                </a>
-            </li>
-            <li class="mm-active">
-                <a href="{{ route('adminBlog') }}" aria-expanded="false">
-                    <div class="icon_menu">
-                        <img src="{{ asset('assets/admin/img/menu-icon/blog.svg') }}" alt="">
-                    </div>
-                    <span> Blog </span>
                 </a>
             </li>
         </ul>
@@ -155,7 +147,7 @@
                             <div class="white_card_header">
                                 <div class="box_header m-0">
                                     <div class="main-title">
-                                        <h2 class="m-0">Contact</h2>
+                                        <h2 class="m-0">Client</h2>
                                     </div>
                                 </div>
                             </div>
@@ -168,16 +160,16 @@
                                                 <div class="search_inner">
                                                     <form Active="#">
                                                         <div class="search_field">
-                                                            <input type="text" placeholder="Search content here...">
+                                                            <input type="text"
+                                                                placeholder="Search content here...">
                                                         </div>
                                                         <button type="submit"> <i class="ti-search"></i> </button>
                                                     </form>
                                                 </div>
                                             </div>
-                                            {{-- <div class="add_button ms-2">
-                                                <a href="#" data-bs-toggle="modal" data-bs-target="#addcategory"
-                                                    class="btn_1">Add New</a>
-                                            </div> --}}
+                                            <div class="add_button ms-2">
+                                                <a href="{{ route('addBlog') }}" class="btn_1"> Tambah Content </a>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="QA_table mb_30">
@@ -186,30 +178,35 @@
                                             <thead>
                                                 <tr>
                                                     <th scope="col">No</th>
-                                                    <th scope="col">Name</th>
-                                                    <th scope="col">Email</th>
-                                                    <th scope="col">Phone</th>
-                                                    <th scope="col">Message</th>
+                                                    <th scope="col">Nama</th>
+                                                    <th scope="col">Image</th>
+                                                    <th scope="col">Deskripsi</th>
                                                     <th scope="col"></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
+                                                @php
+                                                    $a = 0;
+                                                @endphp
+                                                @foreach ($blog as $b)
                                                     @php
-                                                        $a = 0;   
+                                                        $a++;
                                                     @endphp
-                                                    @foreach ($contact as $ct)
-                                                        @php
-                                                            $a++;
-                                                        @endphp
-                                                <tr>
-                                                    <th scope="row">{{ $a }}</th>
-                                                    <td>{{ $ct->full_name }}  </td>
-                                                    <td>{{ $ct->email }}</td>
-                                                    <td>{{ $ct->phone }}</td>
-                                                    <td>{{ $ct->message }}</td>
-                                                    <td><a href="{{ route('deletecontact', [$ct->id]) }}" class="remove"><i class="fa fa-trash"></i></a></td>
-                                                </tr>
-                                                    @endforeach
+                                                    <tr>
+                                                        <th scope="row">{{ $a }}</th>
+                                                        <td>{{ $b->titleBlog }} </td>
+                                                        <td>{{ $b->descBlog }}</td>
+                                                        <td> <img src="{{ asset('imageBlog/' . $b->imageBlog) }}"
+                                                                alt="image" height="40px" width="40px"
+                                                                style="border-radius: 100%"></td>
+                                                        <td>
+                                                            <a href="{{ route('editBlog', [$b->id]) }}"
+                                                                class="edit"><i class="fa fa-1x fa-edit"></i></a>
+                                                            <a href="{{ route('deleteBlog', [$b->id]) }}"
+                                                                class="remove ms-3"><i class="fa fa-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                @endforeach
                                             </tbody>
                                         </table>
                                     </div>

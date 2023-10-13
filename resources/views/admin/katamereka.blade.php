@@ -53,7 +53,7 @@
         </div>
         <ul id="sidebar_menu">
             <li class="mm-active">
-                <a href="{{ route('dashboard') }}" aria-expanded="false">
+                <a href="#" aria-expanded="false">
 
                     <div class="icon_menu">
                         <img src="{{ asset('assets/admin/img/menu-icon/dashboard.svg') }}" alt="">
@@ -90,7 +90,7 @@
                 </a>
             </li>
             <li class="mm-active">
-                <a href="#" aria-expanded="false">
+                <a href="{{ route('adminkata') }}" aria-expanded="false">
                     <div class="icon_menu">
                         <img src="{{ asset('assets/admin/img/menu-icon/multiuser.svg') }}" alt="">
                     </div>
@@ -103,6 +103,14 @@
                         <img src="{{ asset('assets/admin/img/menu-icon/clientss.jpg') }}" alt="">
                     </div>
                     <span> Client </span>
+                </a>
+            </li>
+            <li class="mm-active">
+                <a href="{{ route('adminBlog') }}" aria-expanded="false">
+                    <div class="icon_menu">
+                        <img src="{{ asset('assets/admin/img/menu-icon/blog.svg') }}" alt="">
+                    </div>
+                    <span> Blog </span>
                 </a>
             </li>
         </ul>
